@@ -42,6 +42,22 @@ optional arguments:
                         scale of the picture, should be 0 < scale <= 1
 ```
 
+## 重点
+
+### RGB 与灰度值的转换公式
+
+- 心理学公式
+
+    ```
+    Gray = R*0.299 + G*0.587 + B*0.114
+    ```
+
+- 计算机效率处理公式
+
+    ```
+    Gray = (R*19595 + G*38469 + B*7472) >> 16
+    ```
+
 ## References
 
 - [用Python把图片变成字符画](https://www.jianshu.com/p/991cb07b3ad3)
